@@ -1,0 +1,40 @@
+.contact {
+  width: 100vw;
+  height: 100vh;
+}
+.contactGroup {
+  position: relative;
+  width: 512px;
+  height: 527.17px;
+  left: 82px;
+  top: 101.83px;
+}
+.contactImg {
+  position: absolute;
+  width: 449.14px;
+  height: 303.85px;
+  left: 121.03px;
+  top: 184.62px;
+
+  border-radius: 0px 30px;
+}
+.contactText {
+  position: absolute;
+  width: 449.14px;
+  height: 117.74px;
+  left: 120.93px;
+  top: 511.26px;
+
+  font-family: "Port Lligat Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 28px;
+  /* or 100% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+
+  color: #000000;
+}

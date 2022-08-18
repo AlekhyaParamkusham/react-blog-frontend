@@ -1,0 +1,330 @@
+.wrapper {
+  position: relative;
+  width: 100vw;
+  /* height: 80vh; */
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* background-color: gray; */
+  /* margin-top: 300px; */
+  top: 120px;
+}
+.italian {
+  display: flex;
+  width: 300px;
+  height: 350px;
+  background-color: blanchedalmond;
+  margin: 20px;
+  border-right: 2px dotted #632626;
+  border-top: 2px dotted #826f66;
+  position: relative;
+  border-radius: 40px;
+}
+/* .italian:nth-child(odd) {
+} */
+.italian:nth-child(even) {
+  top: 80px;
+ 
+}
+
+.italianImg {
+  width: 280px;
+  height: 300px;
+}
+.italianImg:hover {
+  opacity: 0.85;
+  transform: scale(1.07);
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+.italianTitle {
+  position: absolute;
+  z-index: 10;
+  left: 100px;
+  bottom:15px;
+  color: black;
+  font-family: "Caveat", cursive;
+  letter-spacing: 2px;
+  padding: 5px;
+  border: 3px dotted #826f66;
+}
+.italianTitle:hover {
+  transform: scale(1.07);
+  color: #ff1818;
+  background-color: #f7e9d7;
+  transition: 0.2s ease;
+}
+.options {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.viewMore {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  border: 1.9px dotted #763857;
+  padding: 5px;
+  border-radius: 30%;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.viewMore:hover {
+  transform: scale(1.1);
+  opacity: 1.8;
+}
+
+
+.italian:nth-child(even) .viewMore {
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+  border: 1.9px dotted #763857;
+  padding: 5px;
+  border-radius: 30%;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.italian:nth-child(even).options {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.outer {
+  position: absolute;
+  width: 100vw;
+  height: 200px;
+  display: flex;
+}
+.addRecipe {
+  padding: 10px;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #fdfce5;
+  border: 2px dotted #ffdac7;
+  position: relative;
+  margin-top: 40px;
+}
+.addRecipe:hover {
+  background: #fff5da;
+  transition: 0.5s ease;
+}
+
+.addImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1.9px dotted #763857;
+  margin: 5px;
+  background: #c3e5ae;
+  cursor: pointer;
+}
+.addImg:hover {
+  opacity: 0.85;
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+.addText {
+  font-size: 27px;
+  color: #ff0000;
+  font-family: "Caveat", cursive;
+}
+@media screen and (max-width: 400px) {
+  .wrapper {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    top: 80px
+  }
+  .italian {
+    width: 260px;
+    height: 320px;
+    margin: 30px;
+  }
+
+  .italian:nth-child(even) {
+    top: 0;
+  }
+  .italianImg {
+    width: 200px;
+    height: 260px;
+  }
+  .options {
+    margin-left: 8px;
+  }
+  .viewMore {
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+  }
+  .italianTitle {
+    left: 40px;
+    letter-spacing: 1px;
+    padding: 10px;
+    border: 2px dotted #826f66;
+    font-size: 21px;
+  }
+  .addRecipe {
+    padding: 3px;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+  }
+
+  .addImg {
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    margin: 7px;
+  }
+
+  .addText {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 599px) {
+  .wrapper {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    top: 80px
+  }
+  .italian {
+    width: 280px;
+    height: 320px;
+    border-radius: 20px;
+  }
+  .italian:nth-child(even) {
+    top: 0;
+  }
+  .italianImg {
+    width: 200px;
+    height: 260px;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 20px;
+  }
+  .options {
+    margin-left: 8px;
+  }
+  .viewMore {
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+  }
+  .italianTitle {
+    left: 50px;
+    letter-spacing: 1px;
+    padding: 10px;
+    border: 2px dotted #826f66;
+    font-size: 22px;
+  }
+  .addRecipe {
+    padding: 3px;
+    /* margin-top: 30px; */
+    margin-bottom: 30px;
+  }
+
+  .addImg {
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    margin: 9px;
+  }
+
+  .addText {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 770px) {
+  .wrapper {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    top: 80px
+  }
+  .italian {
+    width: 380px;
+    height: 440px;
+  }
+  .italian:nth-child(even) {
+    top: 0;
+  }
+  .italianImg {
+    width: 300px;
+    height: 390px;
+  }
+  .options {
+    margin-left: 6px;
+  }
+
+  .italianTitle {
+    left: 100px;
+    letter-spacing: 1px;
+    padding: 8px;
+    border: 2px dotted #826f66;
+    bottom: 2%;
+  }
+  .addRecipe {
+    padding: 3px;
+    /* margin-top: 30px; */
+  }
+
+  .addImg {
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    margin: 7px;
+  }
+
+  .addText {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  .wrapper {
+    padding-top: 0;
+    top: 150px
+  }
+  .italian {
+    width: 340px;
+    height: 400px;
+  }
+  .italianImg {
+    width: 260px;
+    height: 350px;
+  }
+  .options {
+    margin-left: 4px;
+  }
+  .italianTitle {
+    left: 100px;
+    letter-spacing: 1px;
+    padding: 8px;
+    border: 2px dotted #826f66;
+    bottom: 2%;
+  }
+  .viewMore {
+    width: 45px;
+    height: 45px;
+    padding: 3px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1224px) {
+}

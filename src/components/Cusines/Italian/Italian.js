@@ -25,7 +25,7 @@ const Italian = () => {
       setCountry(countryVal);
       setLoading(true);
       const res = await axios.get(
-        `https://recipe-server-blog.herokuapp.com/${countryVal}`
+        `https://recipe-blog-server.vercel.app/${countryVal}`
       );
       setItalianData(res.data[`${countryVal}`]);
     };

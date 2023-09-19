@@ -15,7 +15,7 @@ const SingleItalian = () => {
     const getBlog = async () => {
       setLoading(true);
       const res = await axios.get(
-        `https://recipe-server-blog.herokuapp.com/${country}/${path}`
+        `https://recipe-blog-server.vercel.app/${country}/${path}`
       );
       setBlog(res.data[`${country}`]);
     };
